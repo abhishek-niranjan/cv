@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.92, top=2.2cm, bottom=1cm]{geometry}
+\usepackage[scale=0.88, top=2.2cm, bottom=1cm]{geometry}
 %\usepackage[top=2cm, bottom=0.5cm, left=0.5cm, right=0.5cm]{geometry}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
@@ -36,8 +36,9 @@
 %\phone{+2~(345)~678~901}                           % optional, remove / comment the line if not wanted
 %\fax{+3~(456)~789~012}                             % optional, remove / comment the line if not wanted
 \email{abhishek.niranjan.iitkgp@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{abhishek-niranjan.github.io}                         % optional, remove / comment the line if not wanted
-\extrainfo{github.com/abhishek-niranjan}                 % optional, remove / comment the line if not wanted
+\homepage{github.com/abhishek-niranjan}     % optional, remove / comment the line if not wanted
+\extrainfo{\href{https://www.researchgate.net/profile/Abhishek_Niranjan3/research}{ResearchGate}}
+%\extrainfo{github.com/abhishek-niranjan}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
@@ -60,54 +61,50 @@
 \makecvtitle
 \vspace*{-3\baselineskip}
 \section{Education}
-\cventry{2013 -- 2018}{Master of Technology + Bachelor of Technology(Hons.) in Computer Science \& Engineering}{Indian Institute of Technology}{Kharagpur, India}{}{GPA: 7.96/10.00}
-\cventry{2011 -- 2012}{AISSCE (Grade XII)}{Kendriya Vidyalaya}{Jodhpur, India}{}{Percentage : 93.6\%}
+\cventry{2013 -- 2018}{Master of Technology + Bachelor of Technology(Hons.) in Computer Science \& Engineering}{Indian Institute of Technology}{Kharagpur, India}{}{}
+% \cventry{2011 -- 2012}{AISSCE (Grade XII)}{Kendriya Vidyalaya}{Jodhpur, India}{}{Percentage : 93.6\%}
 \vspace{-2mm}
 \section{Experience}
 \vspace{-2mm}
 \subsection{Industry}
-\cventry{Jun 2018 -- Present}{Senior Software Engineer}{Voice Intelligence, Samsung Research}{Bangalore, India}{}
-{\textbf{Grapheme-to-Phoneme (G2P) :} Bixby is a voice assistant indigenous to Samsung smart devices. As a part of \textit{Automated Speech Recognition(ASR)} team, I built Copy-Augmented Encoder-Decoder Bi-LSTM based architecture to achieve state-of-the-art results. Research paper accepted at ASRU 2019.
-\vspace{4} \\ 
-\textbf{Grammatical Error Correction (GEC) :} Approached the GEC problem as a sequence-2-sequence task with (hypothesis, reference) as the (source, target) sentence pair. Modified Transformer architecture to handle attention from multi Encoders in an hierarchical fashion for on-device textual processing module in smartphones to assist voice and keyboard enabled services.
-\vspace{4} \\ 
-\textbf{Speech-to-Speech Translation :} Presently working on translation problem involving conversion of Korean audio signal features to English audio signal features. Using Transformer model as the fundamental sequence-to-sequence architecture with addition of auxiliary decoders to train on parallel tri-phone aligned data.\\}
-\vspace{-2mm}
-\cventry{May-Jul 2017}{Data Science Intern}{Amplus Solar}{Gurgaon, India}{}
-{\textbf{Soiling Rate :} Photovoltaic plants experience soiling phenomena which results in decrement of power generation. Developed an algorithm to compute the soiling rate from limited data to devise a \textit{cost-optimized} cleaning schedule of solar plants.
-\vspace{4} \\ 
-\textbf{Power-Generation Forecasts : }Engineered a forecasting module to predict hourly active power generation by a PV plant using \textit{gradient boosted trees}. achieving a correlation of 0.97; Augmented the feature set by utilizing OpenWeatherMap API.
-\vspace{4} \\ 
-\textbf{Power-BI Reports : }Automated the generation of daily visualization reports of Solar Plants portfolio in \textit{Power BI} by connecting MySQL server hosted on AWS EC2 instance. Built a GUI application using \textit{PyQt}4 to facilitate the data downloading from multiple dashboards. \\
-}
+\cventry{}{Samsung Research \& Development Institute}{Bangalore, India}{}{}{}
+\cventry{Mar 2020 -- Present}{Lead Engineer}{}{}{}
+{\textbf{\textit{Whisper Speech Recognition :}} Bixby is a voice assistant indigenous to Samsung smart devices. As a part of Automated Speech Recognition(ASR) team, built a speech-to-whisper conversion system using CycelGAN to generate synthetic whisper signals to augment training data. Research paper accepted in IEEE INTERSPEECH 2020. \vspace{2} \\
+\textbf{\textit{Speech-to-Speech Translation :}} Presently working on speech translation problem involving conversion of Korean audio signal features to English audio signal features. Using Transformer model as the fundamental sequence-to-sequence architecture with addition of auxiliary decoders to train on parallel tri-phone aligned data. \vspace{2}}
+\cventry{Jun 2018 -- Mar 2020}{Senior Software Engineer}{}{}{}
+{\textbf{\textit{Grapheme-to-Phoneme (G2P) :}} Built and deployed Copy-Augmented Encoder-Decoder Bi-LSTM based architecture to achieve state-of-the-art results on grapheme-to-phoneme conversion problem. Research paper was published in IEEE ASRU 2019.
+\vspace{2} \\ 
+\textbf{\textit{Grammatical Error Correction (GEC) :}} Developed and deployed a sequence-to-sequence model for Bixby's inverse text normalization (ITN) module. Modified Transformer architecture to handle attention from multi Encoders in an hierarchical fashion for on-device processing in smartphones to assist voice and keyboard enabled services. \\ }}
+\vspace{-2mm}\cventry{May-Jul 2017}{Data Science Intern}{Amplus Solar}{Gurgaon, India}{}
+{\textbf{\textit{Soiling Rate :}} Photovoltaic plants experience soiling phenomena which results in decrement of power generation. Developed an algorithm to compute the soiling rate from limited data to devise a \textit{cost-optimized} cleaning schedule of solar plants.
+\vspace{2} \\ 
+\textbf{\textit{Power-Generation Forecasts : }}Engineered a forecasting module to predict hourly active power generation by a PV plant using \textit{gradient boosted trees}. achieving a correlation of 0.97; Augmented the feature set by utilizing OpenWeatherMap API.
+\vspace{2} \\ 
+\textbf{ \textit{Power-BI Reports : }}Automated the generation of daily visualization reports of Solar Plants portfolio in \textit{Power BI} by connecting MySQL server hosted on AWS EC2 instance. Built a GUI application using \textit{PyQt}4 to facilitate the data downloading from multiple dashboards. \\}
 \vspace{-2mm}
 \cventry{May-Jul 2016}{Data Science Intern}{Bidgely Technologies}{Bangalore, India}{}
-{\textbf{Vacation Detection : }Bidgely's energy dis-aggregation technology helps consumers and utilities to adopt eco and pocket friendly power consumption. Devised a sliding window algorithm to predict the vacation instances of the residents in \textit{MATLAB with precision \textgreater95\% and recall \textgreater70\%,} which got incorporated into production.
-\vspace{4} \\ 
-\textbf{Refrigeration Consumption : }Extended the sliding-window algorithm to compute refrigerator consumption from low resolution energy data, which was pushed into dis-aggregation pipeline. \\}
+{\textbf{\textit{Vacation Detection : }}Bidgely's energy dis-aggregation technology helps consumers and utilities to adopt eco and pocket friendly power consumption. Devised a sliding window algorithm to predict the vacation instances of the residents in \textit{MATLAB with precision \textgreater95\% and recall \textgreater70\%,} which got incorporated into production.
+\vspace{2} \\ 
+\textbf{\textit{Refrigeration Consumption : }}Extended the sliding-window algorithm to compute refrigerator consumption from low resolution energy data, which was pushed into dis-aggregation pipeline. \\}
 \vspace{-2mm}
 \cventry{May-Jul 2015}{Application Developer Intern}{Outsy Inc.}{Mumbai, India}{}
-{\textbf{Information Retrieval : }Outsy is a lifestyle and event recommendations android application. Extracted artists' names from 15,000 Facebook textual posts using Stanford POSTagger after NLTK assisted pre-processing; Generated artists' profile database using Wikipedia API, Youtube API, and SoundCloud API.}
+{\textbf{\textit{Information Retrieval : }}Outsy is a lifestyle and event recommendations android application. Extracted artists' names from 15,000 Facebook textual posts using Stanford POSTagger after NLTK assisted pre-processing; Generated artists' profile database using Wikipedia API, Youtube API, and SoundCloud API.}
 \vspace{-1} \\ 
 \subsection{Academic}
 \cventry{Jul 2017 -- May 2018}{Researcher}{Complex Networks Research Group}{Indian Institute of Technology}{Kharagpur, India}
 {\textit{Advised by } Prof. Pawan Goyal and Prof. Mayank Singh\\
-\textbf{Master's Thesis: Document Clustering -} Aim of the project was to cluster articles from ACL Anthology on the basis of NLP tasks and the methodology (algorithm, deep architecture, etc.) proposed to solve that task. 
+\textbf{\textit{Master's Thesis: Document Clustering -}} Aim of the project was to cluster articles from ACL Anthology on the basis of NLP tasks and the methodology (algorithm, deep architecture, etc.) proposed to solve that task. 
 Labelled the research articles with one of the NLP tasks (Machine Translation, NER, etc.) using rule-based pattern search in bibliographic text (title, abstract and citations received and given) to formulate a semi-supervised learning problem of tagging research papers with the NLP task. Created the feature-set comprising of learned vector embeddings of research articles’ bibliographic text(doc2vec) and citation network features for each of the rule-based tagged research article. The algorithm achieved \textit{recall of 91.52\%} and \textit{precision of 76.31\%}. \\}
 \vspace{-2mm}
-\cventry{Jul 2017 -- Apr 2018}{Teaching Assistant}{Indian Institute of Technology}{Kharagpur, India}{}
-{\textit{Programming and Data Structures} for Prof. Rogers Mathew.\\
-Tutored freshmen in data structures concepts and algorithmic programming exercises.\\}
-\vspace{-2mm}
-\cventry{Jan 2017 -- May 2017}{Undergraduate Researcher}{Complex Networks Research Group}{Indian Institute of Technology}{Kharagpur, India}
-{\textbf{Bachelor's Thesis:Copying Citation Contexts -}  Objective of the project was to analyze massive dataset comprising of nearly 1.5 million computer science articles and more than 26 million citation contexts to understand the behaviour of "Copying Citation Contexts" amongst the researchers. Conducted experiments to reveal the copying patterns across 24 fields of computer science as well as the prominence of self-citation (authors citing their previous work) in the research community. Research Paper published in \textit{Joint Conference on Digital Libraries(JCDL), 2017}}
-\vspace{-2mm}
-\section{Publications}
-\cvitem{}{ \textbf{Abhishek Niranjan}, M A B Shaik. (2019). \textit{Improving grapheme-to-phoneme conversion by investigating copying mechanism in recurrent architectures}. ASRU 2019}
-\cvitem{}{Ankan Mullick, Anindya Bhandari, \textbf{Abhishek Niranjan}, Nitesh Sekhar, Shrey Garg,  Riya Bubna, Mayank Roy. (2018). \textit{Drift in Online Social Media.} IEMCON 2018 }
-\cvitem{}{Mayank Singh, \textbf{Abhishek Niranjan}, Divyansh Gupta, Nikhil Angad Bakshi, Animesh Mukherjee, Pawan Goyal. (2017). \textit{Citation sentence reuse behavior of scientists: A case study on massive bibliographic text dataset of computer science.} JCDL 2017}
-\vspace{-2mm}
+% \cventry{Jul 2017 -- Apr 2018}{Teaching Assistant}{Indian Institute of Technology}{Kharagpur, India}{}
+% {\textit{Programming and Data Structures} for Prof. Rogers Mathew.\\
+% Tutored freshmen in data structures concepts and algorithmic programming exercises.\\}
+% \vspace{-2mm}
+% \cventry{Jan 2017 -- May 2017}{Undergraduate Researcher}{Complex Networks Research Group}{Indian Institute of Technology}{Kharagpur, India}
+% {\textbf{Bachelor's Thesis:Copying Citation Contexts -}  Objective of the project was to analyze massive dataset comprising of nearly 1.5 million computer science articles and more than 26 million citation contexts to understand the behaviour of "Copying Citation Contexts" amongst the researchers. Conducted experiments to reveal the copying patterns across 24 fields of computer science as well as the prominence of self-citation (authors citing their previous work) in the research community. Research Paper published in \textit{Joint Conference on Digital Libraries(JCDL), 2017}}
+\vspace{-3mm}
 \section{Projects}
+\vspace{-1mm}
 \cventry{Jan 2017 -- Mar 2017}{Competitive Strength Prediction of ATM Vendors in California : Data Analytics}{}{}{}
 {Assessed the competitive strength of 3 major ATM vendors using spatial ATM network data and the demographics information of California. \\
 Visualised feature importance using Tableau and clustered the ATM locations by utilising k-means approach. \\
@@ -122,23 +119,33 @@ Built a statistical language model based on stochastic grammar to recognise mean
 \cventry{Mar 2016 -- Apr 2016}{Data Extractor from 2D Plots : Software Development }{}{}{}
 {Worked in a team of 15 members in Inter-Hall Software Development Competition to build a graph extractor that detects plots in any PDF and digitises the graphs. \\
 Built a module which digitises the plot lines using the pixel values from the graphical(BW) image by aptly scaling them to the given range of the axes imported from the OCR module using Python Imaging Library. }
-\vspace{-2mm}
+\vspace{-3mm}
+\section{Skills}
+\vspace{-1mm}
+\cvitem{}{\textbf{Languages:} Python, C++, C, SQL}
+\cvitem{}{\textbf{Frameworks \& Libraries:} TensorFlow, PyTorch, Keras, Scikit-learn, pandas, NumPy }
+\cvitem{}{\textbf{Softwares \& Tools: }MATLAB, Tableau, Power-BI, Google Cloud Platform, AWS, Git, Shell Scripting}
+\cvitem{}{\textbf{Documentation: }\LaTeX, UML}
+\section{Publications}
+\vspace{-1mm}
+\cvitem{}{ \href{}{G Prithvi Raj Reddy, Gowtham Prudhvi V, \textbf{Abhishek Niranjan}, Kinnera Saranu, Raghava Sarma A, M A B Shaik, Periyasamy Paramasiyam. \textit{Whisper augmented speech recognition system using CycleGAN as speech to whisper domain transfer mechanism}. INTERSPEECH 2020}}
+\cvitem{}{ \href{}{\textbf{Abhishek Niranjan}, M A B Shaik. \textit{Improving grapheme-to-phoneme conversion by investigating copying mechanism in recurrent architectures}. ASRU 2019}}
+\cvitem{}{\href{https://ieeexplore.ieee.org/abstract/document/8614746}{Ankan Mullick, Anindya Bhandari, \textbf{Abhishek Niranjan}, Nitesh Sekhar, Shrey Garg,  Riya Bubna, Mayank Roy. \textit{Drift in Online Social Media.} IEMCON 2018} }
+\cvitem{}{\href{https://arxiv.org/pdf/1705.02499.pdf}{Mayank Singh, \textbf{Abhishek Niranjan}, Divyansh Gupta, Nikhil Angad Bakshi, Animesh Mukherjee, Pawan Goyal.  \textit{Citation sentence reuse behavior of scientists: A case study on massive bibliographic text dataset of computer science.} JCDL 2017}}
+\vspace{-3.5mm}
 \section{Honors and Achievements}
+\vspace{-1mm}
+\cventry{2019}{Spot Award}{Samsung R\&D Institute}{Bangalore}{}{Received spot award for outstanding contribution towards research activities within ASR team in Voice Intelligence R\&D Division.}
 \cventry{2018}{First Place}{Data Science Competition}{Inter IIT Technical Meet}{}{Selected as the captain, from a pool of 400+ applicants, of the gold-
 winning data science team to represent IIT Kharagpur in the technical tournament attended by 19 IITs.}
 \cventry{2017}{Runner-Up}{Analyze This}{American Express}{}{Secured 2nd position in the leaderboard out of 1400+ teams participated from top-tier colleges in India. }
-\cventry{2016}{Runner-Up}{Data Analytics}{General Championship}{IIT Kharagpur}{Captained LBS Hall of Residence’s Data Analytics team to secure 2nd
-position in the annual event attended by a total of 20 teams.}
+% \cventry{2016}{Runner-Up}{Data Analytics}{General Championship}{IIT Kharagpur}{Captained LBS Hall of Residence’s Data Analytics team to secure 2nd position in the annual event attended by a total of 20 teams.}
 \cventry{2013-2016}{Recipient}{MCM Scholarship}{Indian Institute of Technology Kharagpur}{}{}
-\cventry{2010-2012}{Recipient}{IAF AFWWA Scholarship for High School Students}{}{}{}
-\vspace{-2mm}
-\section{Skills}
-\cvitem{}{\textbf{Languages:} Python, C++, C, SQL}
-\cvitem{}{\textbf{Frameworks \& Libraries:} TensorFlow, PyTorch, Keras, Scikit-learn }
-\cvitem{}{\textbf{Softwares \& Tools: }MATLAB, Tableau, Power-BI, Git}
-\cvitem{}{\textbf{Documentation: }\LaTeX, UML}
+% \cventry{2010-2012}{Recipient}{IAF AFWWA Scholarship for High School Students}{}{}{}
+\vspace{-3mm}
 
-%\section{Extracurricular}
+\section{Outside Work}
+\cvitem{}{I play Basketball, Badminton and Football. A loyal supporter of Liverpool FC and I take pride in having not missed a single match since I started following despite being in an unfavourable time zone. Casual chess and poker player, was fortunate to secure gold medal in Inter-organisation level chess tournament in Samsung R\&D Bangalore.}
 
 
 % Publications from a BibTeX file without multibib
